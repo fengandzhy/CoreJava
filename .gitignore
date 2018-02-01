@@ -1,0 +1,10 @@
+# Object file
+*.prefs
+.metadata/
+.sonarlint/
+Java/target/classes/.gitignore
+Java/target/classes/com/citi/hz41382/
+JavaModle/target/classes/.gitignore
+JavaModle/target/test-classes/.gitignore
+RemoteSystemsTempFiles/
+*.class
