@@ -1,7 +1,7 @@
 package com.citi.hz41382.java.model.sigleton;
 
 /*
- * 懒汉式，线程不安全 
+ * 懒汉式，线程不安全
  * author: zhy 
  * date : 20171128s
  * **/
