@@ -8,3 +8,4 @@ JavaModle/target/classes/.gitignore
 JavaModle/target/test-classes/.gitignore
 RemoteSystemsTempFiles/
 *.class
+*.MF
