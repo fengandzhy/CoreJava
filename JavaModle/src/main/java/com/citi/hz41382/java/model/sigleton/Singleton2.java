@@ -16,7 +16,7 @@ public class Singleton2 {
 	public static Singleton2 getInstance(){
 		if(singleton2==null){
 			synchronized(Singleton2.class){
-				if(singleton2==null){
+				if(singleton2==null){ //check second time 
 					singleton2 = new Singleton2();
 				}
 			}
