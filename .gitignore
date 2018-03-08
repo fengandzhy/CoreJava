@@ -6,3 +6,4 @@
 .sonarlint/
 .gitignore
 /target/
+.recommenders
