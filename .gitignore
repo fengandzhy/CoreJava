@@ -1,0 +1,8 @@
+##ignore this file##
+.classpath
+.project
+.settings
+.metadata/
+.sonarlint/
+.gitignore
+/target/
