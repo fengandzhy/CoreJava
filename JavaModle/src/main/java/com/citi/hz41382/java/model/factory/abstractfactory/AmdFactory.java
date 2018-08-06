@@ -9,7 +9,6 @@ public class AmdFactory implements AbstractFactory {
 
 	@Override
 	public Mainboard createMainboard() {
-		// TODO Auto-generated method stub
 		return new AmdMainboard(985);
 	}
 

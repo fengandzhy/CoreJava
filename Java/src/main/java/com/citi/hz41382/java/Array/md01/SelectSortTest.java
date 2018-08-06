@@ -1,4 +1,4 @@
-package com.citi.hz41382.java.Array.md01;
+package com.citi.hz41382.java.array.md01;
 
 public class SelectSortTest {
 

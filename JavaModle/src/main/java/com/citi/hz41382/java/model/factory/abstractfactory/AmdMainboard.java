@@ -1,7 +1,9 @@
 package com.citi.hz41382.java.model.factory.abstractfactory;
 
-public class AmdMainboard implements Mainboard{
+import org.apache.log4j.Logger;
 
+public class AmdMainboard implements Mainboard{
+	private Logger logger = Logger.getLogger(IntelCpu.class);
 	private int holes;
 	
 	public AmdMainboard(int holes){
@@ -10,6 +12,6 @@ public class AmdMainboard implements Mainboard{
 	
 	@Override
 	public void installCPU() {
-		System.out.println("AMD主板的CPU插槽孔数是：" + holes);		
+		logger.info("Intel CPU的针脚数：" + holes);
 	}
 }

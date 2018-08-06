@@ -1,7 +1,10 @@
 package com.citi.hz41382.java.model.factory.abstractfactory;
 
+import org.apache.log4j.Logger;
+
 public class AmdCpu implements Cpu {
 
+	private Logger logger = Logger.getLogger(AmdCpu.class);
 	private int pins;
 	
 	public AmdCpu(int pins){
@@ -9,11 +12,8 @@ public class AmdCpu implements Cpu {
 	}
 	
 	@Override
-	public void calculate() {
-		
-		
-		System.out.println("AMD CPU的针脚数：" + pins);
-
+	public void calculate() {		
+		logger.info("AMD CPU的针脚数：" + pins);
 	}
 
 }

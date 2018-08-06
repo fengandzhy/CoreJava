@@ -1,9 +1,10 @@
 ##ignore this file##
-.classpath
-.project
-.settings
+*.classpath
+*.project
+*.settings
 .metadata/
 .sonarlint/
 .gitignore
-/target/
+/target/*
 .recommenders
+/META-INF/*
