@@ -1,4 +1,4 @@
-package com.citi.hz41382.java.model.factory.factoryMethod;
+package com.citi.hz41382.java.model.factory.factorymethod;
 
 import java.io.IOException;
 
