@@ -21,7 +21,7 @@ public class StringUtils {
 	}
 	
 	/**
-	 * 判断是否为数字
+	 * 判断是否为整数字
 	 * @author hz41382
 	 * 2018-07-03
 	 * */
