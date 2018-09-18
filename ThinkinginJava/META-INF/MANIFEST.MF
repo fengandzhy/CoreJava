@@ -4,3 +4,4 @@ Bundle-Name: ThinkinginJava
 Bundle-SymbolicName: ThinkinginJava
 Bundle-Version: 1.0.0.qualifier
 Export-Package: Java.ThinkinginJava
+Require-Bundle: org.junit
