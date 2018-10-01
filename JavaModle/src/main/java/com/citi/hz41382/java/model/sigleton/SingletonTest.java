@@ -5,5 +5,6 @@ public class SingletonTest {
 	public static void main(String[] args) {
 		Singleton5 singleton = Singleton5.INSTANCE;
 		singleton.doSomething();
+		
 	}
 }
