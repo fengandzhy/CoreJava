@@ -2,7 +2,7 @@ package com.citi.hz41382.java.model.sigleton;
 
 
 /**
- * ¶öººÊ½ 
+ * Eager singleton  
  * author: zhy 
  * date : 20171128
  * target: studing singleton model

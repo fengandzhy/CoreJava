@@ -1,7 +1,9 @@
 package com.citi.hz41382.java.model.sigleton;
 
 /**
- * 静态内部类方式
+ * Static inner class modle, 
+ * package the instance which need to be created as a single instance into a 
+ * constant in a inner class. 
  * author: zhy 
  * date : 20171128
  * target: studing singleton model
