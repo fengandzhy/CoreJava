@@ -1,7 +1,7 @@
 package com.citi.hz41382.java.model.sigleton;
 
 /**
- * ÀÁººÊ½£¬Ïß³Ì²»°²È«
+ * æ‡’æ±‰å¼å•ä¾‹æ¨¡å¼
  * Lazy Singleton, It is not thread safe
  * author: zhy 
  * date : 20171128s
