@@ -46,6 +46,7 @@ public class OperateByIndex {
 		return datas[index];
 	}
 	
+	
 	private void changeArrayLength(boolean flag){
 		if(flag){
 			length = length + 5;			
