@@ -5,6 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+
+/**
+* <p>Title: OperateByDataTest</p>
+* <p>Description: </p>
+* <p>Company: Citi</p>
+* @author hz41382
+* @date 2018年10月3日
+*/
 public class OperateByDataTest {
 
 	OperateByData operatebyData;
@@ -40,5 +48,33 @@ public class OperateByDataTest {
 		assertEquals(5,operatebyData.datas.length);
 	}
 	
+	@Test
+	public void testSearchOneByData1() {
+		operatebyData.insertData(5);
+		operatebyData.insertData(4);
+		operatebyData.insertData(1);
+		operatebyData.insertData(1);
+		operatebyData.insertData(2);
+		operatebyData.insertData(2);
+		Integer data = operatebyData.searchOneByData(3);
+		assertNull(data);		
+	}
+		
 	
+	@Test
+	public void testSearchOneByData2() {
+		operatebyData.insertData(5);
+		operatebyData.insertData(4);
+		operatebyData.insertData(1);
+		operatebyData.insertData(1);
+		operatebyData.insertData(2);
+		operatebyData.insertData(2);
+		Integer data = operatebyData.searchOneByData(2);
+		assertNotNull(data);
+		
+	}
+	
+	public void test(){
+		
+	}
 }

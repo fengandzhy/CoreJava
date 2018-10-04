@@ -5,7 +5,13 @@ public class OperateByData extends OperateByIndex{
 	public OperateByData(){
 		super();
 	}
-	
+	/**
+	 * 
+	 * <p>Title: remove</p>
+	 * <p>Description: </p>
+	 * @param data
+	 * @return
+	 */
 	public boolean remove(int data){
 		int index = getIndex(data);
 		if(index ==-1){
@@ -13,6 +19,14 @@ public class OperateByData extends OperateByIndex{
 		}
 		removeByIndex(index);		
 		return true;
+	}
+	
+	public Integer searchOneByData(int data){
+		int index = getIndex(data);
+		if(index<0){
+			return null;
+		}
+		return datas[index];
 	}
 	
 	private int getIndex(int data){
@@ -24,5 +38,7 @@ public class OperateByData extends OperateByIndex{
 			}
 		}
 		return index;
-	}	
+	}
+	
+	
 }
