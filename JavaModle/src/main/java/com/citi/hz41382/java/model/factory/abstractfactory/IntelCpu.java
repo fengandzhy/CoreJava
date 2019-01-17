@@ -14,6 +14,6 @@ public class IntelCpu implements Cpu{
 	
 	@Override
 	public void calculate() {
-		logger.info("Intel CPUµÄÕë½ÅÊý£º" + pins);
+		logger.info("Intel CPUçš„é’ˆè„šæ•°" + pins);
 	}
 }
