@@ -1,5 +1,8 @@
 package com.citi.hz41382.java.model.sigleton;
 
+import org.apache.log4j.Logger;
+
+
 /**
  * enumeration model. 
  * author: zhy 
@@ -8,9 +11,11 @@ package com.citi.hz41382.java.model.sigleton;
  * */
 
 public enum Singleton5 {
+	
 	INSTANCE; 
-	@SuppressWarnings("unused")
+	private static Logger logger = Logger.getLogger(Singleton5.class);
+	
 	public void doSomething(){
-		System.out.println("aaaaaaaaa");
+		logger.info("singleton has been created!");
 	}
 }
