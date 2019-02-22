@@ -1,6 +1,7 @@
 package com.citi.java8.lambda;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -25,7 +26,7 @@ public class MethodReference {
 		testStaticMethod();
 		testMethod();
 		testNew();
-		List<Apple> list = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
+		
 	
 	}
 	
@@ -53,8 +54,13 @@ public class MethodReference {
 		logger.info(s);
 	}
 	
-	public static void testSort(List<Apple> list){
-		
+	public static void testSort(){
+		List<Apple> list = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
+		Comparator<Apple> byColor2 = (o1, o2) -> o1.getColor().compareTo(o2.getColor());
+		Comparator<Apple> byColor = Comparator.comparing(Apple::getColor);
+		System.out.println(list);
+        list.sort(byColor);
+        System.out.println(list);
 	}
 	
 	private static <T> void useConsumer(Consumer<T> consumer, T t) {
