@@ -3,6 +3,7 @@ package com.citi.java8.lambda;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
@@ -104,8 +105,11 @@ public class LambdaUsage {
         Apple apple = f.apply(8);
         logger.info(apple);
         
-        Apple apple1 = testBiFunction("green",15.5, (color,weight)->{return new Apple(color,weight);});
-        logger.info(apple1);
+//        Apple apple1 = testBiFunction("green",15.5, (color,weight)->{return new Apple(color,weight);});
+//        logger.info(apple1);
+        Optional.ofNullable(testBiFunction("green",15.5, Apple::new)).ifPresent(logger::info);
+        
+        
         
 	}
 
